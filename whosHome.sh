@@ -23,7 +23,7 @@ do
 	if grep -q e4:a7:c5:e4:85:ca arpScan.txt 
 	then
 
-		occupant3="Tim"
+		occupant3="Andrew"
 	else
 		occupant3=""
 	fi
