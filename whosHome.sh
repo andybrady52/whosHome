@@ -9,14 +9,14 @@ do
 	if grep -q 82:af:0b:d7:c9:65 arpScan.txt 
 	then 
 		
-		occupant1="Paul"
+		occupant1="Nelly"
 	else 
     #If the MAC address is not found then we will write and empty string to the variable
 		occupant1=""
 	fi
 	if grep -q b2:60:77:57:c7:3e arpScan.txt 
 	then
-		occupant2="James"
+		occupant2="Will"
 	else
 		occupant2=""
 	fi
