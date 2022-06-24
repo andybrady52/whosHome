@@ -30,13 +30,13 @@ do
     #you can edit the code to add as many if else statements as you need to check for every mac address you have
     #I have added some extra lines below that you can add more addresses with. Just uncomment them if you are using them.
     
-    #if grep -q xx:xx:xx:xx:xx:xx arpScan.txt 
-	#then
+        if grep -q 6e:89:35:c9:16:5f arpScan.txt 
+	then
 
-	#	occupant4="Jess"
-	#else
-	#	occupant4=""
-	#fi
+		occupant4="Zoe"
+	else
+		occupant4=""
+	fi
     #if grep -q xx:xx:xx:xx:xx:xx arpScan.txt 
 	#then
 
@@ -62,8 +62,8 @@ do
 	#echo "Occupant 6 ${occupant6}" 
     
 	#We then output some html code to a file to be served on the webserver on the pi
-	echo "<link rel="stylesheet" href=style.css>
-<h1 class="title">Who's Home?<img src="https://img.icons8.com/fluency/48/000000/home.png"/></h1><h1>$occupant1 <br>$occupant2<br> $occupant3</h1>" > /var/www/html/index.nginx-debian.html
+	echo "<link rel="stylesheet" href="style.css">
+<h1 class="title">Who's Home?<img src="https://img.icons8.com/fluency/48/000000/home.png"/></h1><h1>$occupant1 <br>$occupant2<br> $occupant3 <br>$occupant4<br></h1>" > /var/www/html/index.nginx-debian.html
 	
     #We then want the program to sleep for 5 minutes before scanning the network again.
     #You can adjust this time but beware of flooding the network with traffic if repeated to frequently
