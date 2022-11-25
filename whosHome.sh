@@ -66,6 +66,6 @@ do
 <h1 class="title">Who's Home?<img src="https://img.icons8.com/fluency/48/000000/home.png"/></h1><h1>$occupant1 <br>$occupant2<br> $occupant3 <br>$occupant4<br></h1>" > /var/www/html/index.nginx-debian.html
 	
     #We then want the program to sleep for 5 minutes before scanning the network again.
-    #You can adjust this time but beware of flooding the network with traffic if repeated to frequently
+    #You can adjust this time but beware of flooding the network with traffic if repeated too frequently
     sleep 5m
 done
